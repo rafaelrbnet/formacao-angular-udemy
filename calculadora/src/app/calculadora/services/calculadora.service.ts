@@ -1,3 +1,8 @@
+/**
+ * Serviço responsável por executar as operações da calculadora.
+ * @autor Rafael Baena Neto<rafael.rbnet@gmail.com>
+ * @since 1.0.0
+*/
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -24,7 +29,7 @@ export class CalculadoraService {
    * @param operação string Operação a ser executada
    */
   calcular(num1:number, num2: number, operacao: string): number{
-    let resutado: number;
+    let resutado: number; // armazena oresultado da operação
 
     switch(operacao) {
       case CalculadoraService.SOMA:
@@ -42,7 +47,7 @@ export class CalculadoraService {
       default:
         resutado = 0;
     }
-    
+
     return resutado;
   }
 
