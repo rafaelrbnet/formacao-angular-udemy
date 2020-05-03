@@ -17,7 +17,7 @@ export class CalculadoraComponent implements OnInit {
   constructor(private CalculadoraService: CalculadoraService) { }
 
   ngOnInit(): void {
-    //this.limpar();
+    this.limpar();
   }
 
   /**
